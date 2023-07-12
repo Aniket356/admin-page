@@ -80,6 +80,7 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 1.3rem;
+    box-shadow: 0 2px 4px;
 }
 
 .header-section > div, .header-section > div > div {
@@ -170,7 +171,106 @@ ul {
     height: auto;
     font-size: 1.3rem;
     padding: 0.4em 0.6em;
-    border-radius: 20px;
+    border-radius: 25px;
     cursor: pointer;
     font-weight: bold;
+}
+
+.main-content {
+    margin: 2em 1em;
+}
+
+.main-content > h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+}
+
+.cards {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+}
+
+.card {
+    background-color: azure;
+    padding: 3em 2em;
+    border-radius: 15px;
+    border-left: 12px solid var(--accent);
+    box-shadow: 1px 2px 7px #515050;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+}
+
+.card p {
+   font-size: 1.2rem;
+}
+
+.card .content {
+    margin-bottom: 25px;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+}
+
+.icons > img {
+    width: 1.8rem;
+    height: auto;
+}
+
+.main-content-side-section {
+    margin: 2em 1em;
+    width: 25rem;
+}
+
+.announcement-section > h1 {
+    margin-bottom: 0.5em;
+}
+
+.announcements {
+    background-color: azure;
+    padding: 1.7em 2em;
+    border-radius: 15px;
+    margin-bottom: 1.5em;
+    box-shadow: 1px 2px 7px #515050;
+
+}
+
+.announcement:not(.announcement:last-child) {
+    padding: 10px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid gray;
+}
+
+.announcement:last-child {
+    padding: 10px 10px 0 10px;
+}
+
+.trending-section > h1 {
+    margin-bottom: 0.5em;
+}
+
+.trending-section {
+    background-color: azure;
+    border-radius: 15px;
+    padding: 1.7em 2em;
+    box-shadow: 1px 2px 7px #515050;
+}
+
+.person:not(.person:last-child){
+    margin-bottom: 1.1em;
+}
+
+.person h3 {
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin-bottom: 3px;
+}
+
+.person p {
+    color: #515050;
 }
